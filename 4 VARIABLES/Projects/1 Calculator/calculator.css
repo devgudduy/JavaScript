@@ -1,0 +1,39 @@
+body {
+  background-color: rgba(0, 0, 255, 0.685);
+}
+body div {
+  text-align: center;
+}
+#calculator {
+  border: 1px solid rgb(179, 174, 174);
+  border-radius: 5px;
+  width: 200px;
+  margin-left: 40vw;
+  background-color: orange;
+}
+
+#display {
+  margin: 10px;
+  width: 85%;
+  font-size: 25px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.button {
+  margin: 3px;
+  width: 45px;
+  height: 45px;
+  color: white;
+  border-color: white;
+  background-color: red;
+}
+
+#dev-name {
+  font-size: 18px;
+  color: white;
+}

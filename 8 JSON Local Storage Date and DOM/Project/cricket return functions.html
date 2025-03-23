@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Cricket Game</title>
+  <style>
+    body {
+      text-align: center;
+      background-color: rgb(5, 117, 20);
+      color: white;
+    }
+
+    h1 mark {
+      color: blue;
+    }
+
+    button {
+      font-size: 12px;
+      color: blue;
+      font-weight: 600;
+      height: 50px;
+      width: 50px;
+      border: 2px solid rgb(10, 10, 41);
+      border-radius: 50%;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Bat Ball Stump Game</h1>
+  <button onclick="
+    let computerChoice = generateComputerChoice();
+    
+    let resultMsg;
+    if (computerChoice === 'Ball') {
+      score.win++;
+      resultMsg = 'User Won!';
+    } else if (computerChoice === 'Bat') {
+      score.tie++;
+      resultMsg = `It's tie`;
+    } else if (computerChoice === 'Stump') {
+      score.lost++;
+      resultMsg = 'Computer has won!';
+    }
+    
+    console.log(score);
+    document.querySelector('#user-move').innerText = 'you have chosen Bat';
+    
+    document.querySelector('#computer-move').innerText = `computer choice is ${computerChoice}`;
+    document.querySelector('#result').innerText = `${resultMsg}`;
+    document.querySelector('#score').innerText = `${score.displayScore()}`;
+
+  ">Bat</button>
+
+  <button onclick="
+    computerChoice = generateComputerChoice();
+
+    resultMsg = '';
+    if (computerChoice === 'Ball') {
+      score.tie++;
+      resultMsg = `It's tie`;
+    } else if (computerChoice === 'Bat') {
+      score.lost++;
+      resultMsg = 'Computer has won!';
+    } else if (computerChoice === 'Stump') {
+      score.win++;
+      resultMsg = 'User Won!';
+    }
+
+    console.log(score);
+    document.querySelector('#user-move').innerText = 'you have chosen Ball';
+    document.querySelector('#computer-move').innerText = `computer choice is ${computerChoice}`;
+    document.querySelector('#result').innerText = `${resultMsg}`;
+    document.querySelector('#score').innerText = `${score.displayScore()}`;
+  ">Ball</button>
+
+  <button onclick="
+    computerChoice = generateComputerChoice();
+
+    resultMsg = '';
+    if (computerChoice === 'Ball') {
+      score.lost++;
+      resultMsg = 'Computer has won!';
+    } else if (computerChoice === 'Bat') {
+      score.win++;
+      resultMsg = 'User Won!';
+    } else if (computerChoice === 'Stump') {
+      score.tie++;
+      resultMsg = `It's tie`;
+    }
+    
+    console.log(score);
+    document.querySelector('#user-move').innerText = 'you have chosen Stump';
+    document.querySelector('#computer-move').innerText = `computer choice is ${computerChoice}`;
+    document.querySelector('#result').innerText = `${resultMsg}`;
+    document.querySelector('#score').innerText = `${score.displayScore()}`;
+  ">Stump</button>
+  <button>Reset</button>
+  <h3 id="user-move"></h3>
+  <h3 id="computer-move"></h3>
+  <h3 id="result"></h3>
+  <h3 id="score"></h3>
+
+  <script>
+    let score = {
+      win: 0,
+      lost: 0,
+      tie : 0,
+      displayScore: function() {
+        return `Score: Won: ${score.win}, Lost: ${score.lost}, Tie: ${score.tie}`
+      }
+    };
+    
+    function generateComputerChoice() {
+      //This will generate random number between 0 and 3
+      let randomNumber = Math.random() * 3;
+      if (randomNumber <= 1) {
+        return 'Bat'
+      }
+      else if (randomNumber <= 2) {
+        return 'Ball';
+      }
+      else {
+        return 'Stump';
+      }
+    };
+    // localStorage.setItem('score', JSON.stringify(score));
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+body {
+  background-color: rgb(236, 159, 17);
+}
+#my-button {
+  height: 80px;
+  width: 80px;
+  font-size: 40px;
+  /* color: black;
+  background-color: orange; */
+
+  border: none;
+  border-radius: 5px;
+}
+
+.js-odd {
+  background-color: chocolate;
+}
+
+.js-even {
+  background-color: lawngreen;
+}
+
+#my-button-reset {
+  height: 15px;
+  width: 36px;
+  font-size: 8px;
+  text-align: center;
+  border: none;
+  background-color: orange;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+:hover #my-button-reset {
+  border: 1px solid red;
+  height: 17px;
+  width: 38px;
+  color: white;
+  background-color: green;
+}
+
+.count-box {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  text-align: center;
+  margin-left: 30vw;
+  margin-top: 10vh;
+  border: 2px solid rgb(54, 192, 197);
+  border-radius: 10px;
+  background-color: lightblue;
+}
+
+:hover .count-box {
+  border: 3px solid rgb(20, 111, 114);
+}
+
+#count-box-text {
+  font-size: 22px;
+}
+
+:hover #count-box-text {
+  color: rgba(255,0,0,0.9);
+  font-size: 25px;
+}

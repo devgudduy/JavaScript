@@ -1,0 +1,32 @@
+body {
+  text-align: center;
+  margin-top: 5vh;
+  color: white;
+  background-color: rgba(0, 0, 255, 0.616);
+}
+.class-button {
+  color: red;
+}
+
+#btn-bag {
+  background-color: lightgreen;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  padding: 5px 15px;
+  font-weight: 700;
+}
+
+span {
+  color: red;
+  font-size: 50;
+}
+
+#btn-wishlist {
+  font-weight: 500;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 5px 30px;
+  text-transform: uppercase;
+  
+}

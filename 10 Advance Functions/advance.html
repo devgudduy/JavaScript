@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Advanced Functions</title>
+</head>
+<body>
+  <button id="my-button">Click me</button>
+  
+  <script>
+    //Map Methods
+    // let arr = [1,2,3,4,5,6];
+    // let cube = arr.map((num) => {
+    //   return num * num * num;
+    // });
+    // console.log(cube);
+
+    // let arr = [1,2,3,4,5,6];
+    // let cube=arr.map(num => num*num*num);
+    // console.log(cube);
+    
+
+    //Filter Method
+    // let arr = [1,2,3,4,5,6,7,8,9];
+    // let odds = arr.filter((num, index) => {
+    //   if (num % 2 === 1) {
+    //     return true;
+    //   } else {
+    //     return false;
+    //   }
+    // });
+    // console.log(odds);
+    
+    // let odds = arr.filter((num, index) => {
+    //   if (num % 2 === 1) {
+    //     return false;
+    //   } else {
+    //     return true;
+    //   }
+    // });
+    // console.log(odds);
+
+    // let newOdds = arr.filter(
+    //   (num, index) => num % 2 === 1
+    // );
+    // console.log(newOdds);
+    
+
+    //forEach Loop
+    // let arr = [3,5,7,9];
+    // for (let i=0; i<arr.length; i++) {
+      //   console.log(arr[i]);
+      // }
+      
+      // arr.forEach(function(num) {
+    //   console.log(num);
+    // })
+    
+    // arr.forEach((num) => console.log(num));
+    
+    // let arr = [3,5,7,9];
+
+    // arr.forEach(num => {
+    //   if (num === 5) {
+    //     return;
+    //   }
+    //   console.log(`visited: ${num}`);
+    // })
+
+    // function search(arr, num) {
+    //   for (let i=0; i<arr.length; i++) {
+    //     if (arr[i] === num) {
+    //       console.log(`element found at: ${i}`);
+    //       return;
+    //     }
+    //   }
+    //   console.log(`element was not found`)
+    // }
+    // search(arr, 3);
+
+
+    //eventListner
+    // let buttonElement = document.querySelector('#my-button');
+    // let myEventFunction =  event => {console.log(`I am clicked`) }
+    // buttonElement.addEventListener('click', myEventFunction);
+
+
+    // let printDate = event => console.log(new Date());
+    // buttonElement.addEventListener('click', printDate);
+
+    // let printMyName = event => console.log("I am Guddu Yadav");
+    // buttonElement.addEventListener('click', printMyName);
+
+
+    // buttonElement.removeEventListener('click', printMyName);
+
+    // let sum = function(num1, num2) {
+    //   return num1 + num2;
+    // }
+
+    // console.log(sum(5,3));
+    // let newSum = sum;
+    // console.log(newSum(5,3));
+
+    // ((4 + 5) + 7)
+    // let sumThreeNumbers = function(num1, num2, num3, sumTwoNumbers) {
+    //     let sum1 = sumTwoNumbers(num1, num2);
+    //     return sumTwoNumbers(sum1, num3);
+    // }
+
+    // console.log(sumThreeNumbers(4, 5, 6, sum));
+    // console.log(sumThreeNumbers);
+    // console.log(typeof sumThreeNumbers);
+
+    // Arrow Function
+    // let sum = function(num1, num2) {
+    //   return num1 + num2;
+    // }
+    // console.log(sum(6,8));
+    
+    // let square = num => { //for single argument bracket is optional means '(num)' is same as 'num'
+    //   return num * num;
+    // }
+
+    // let square = num => num * num; // for single line definition curly bracket is also optional means '{return num * num}' is same as 'num * num'
+    // console.log(square(5));
+
+    // let sum1 = (num1, num2) => {
+    //   return num1 + num2;
+    // }
+    // console.log(sum1(6,8));
+
+
+    // let alarm = function() {
+    //   console.log("Subhah ho gya hai, uth jao"); 
+    // }
+    
+    // setTimeout(alarm, 2000);
+
+    // let alarm = () => console.log(`Subhah ho gya hai, uth jao ${new Date()}`); 
+
+    // let timerId = setTimeout(alarm, 1000);
+    // console.log(`Alarm Set with timerId: ${timerId}`);
+    // clearTimeout(timerId); //here timerId = 2 so also can be write as - clearTimeout(2);
+
+    // let intervalId = setInterval(alarm, 2000);
+    // console.log(`Alarm Set with intervalId: ${intervalId}`);
+    // clearInterval(intervalId) //here intervalId = 3  so also can be write as - clearTnterval(3);
+    // setTimeout( () => clearInterval(intervalId), 5000);
+
+
+  </script>
+</body>
+</html>

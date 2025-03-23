@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Scope</title>
+</head>
+<body>
+  <script>
+    let age = prompt("Please Enter Your Age : ");
+    let userMessage;
+    if(age >= 18 && age <= 60) {
+      userMessage = 'You can drive';
+    } else {
+      userMessage = 'Use a bicycle';
+    } 
+    console.log(userMessage);
+    
+    if(userMessage === 'You can drive') {
+      alert("You are Adult.");
+    } else {
+      alert("You are kid or Old");
+    }
+
+  </script>
+</body>
+</html>
